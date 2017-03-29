@@ -1,0 +1,23 @@
+In this project I am analysing the brand 'Gucci' for its male and female users. The demographic inference 
+is used for the same. Also the communities from the users are detected and analysed. From the overall analysis
+it can be seen that more women are talking about the brand than the men. Also there are eight communities
+formed. 
+
+collect. py is used to collect data from twitter. It uses Twitter API to collect the tweets. To collect the tweets 
+search/tweets is used. First it collects 100 tweets and then the max ID is used to collect next 100 tweets and so on.
+In total 5000 tweets are collected.
+In the next half of this file we collect the friends of the set of users that we get from the tweets. This data is stored in 
+the pickle for use.
+
+In classify.py the US census data is used to get the male and female names in the US. Then using these names 
+each tweet has been assigned gender. Then the accuracy of our analysis is measured.
+Also the number of male and female are determined those we get from matching our tweets with the census data.
+Also the tweets are tokenized and we get the dictionary for the tokens in each tweet.
+
+In cluster.py the friends list of the users are taken that we have collected from the collect.py. Then the Girvan Newman 
+method is used to detect the communities from the users. Also the graph has been drawn that shows the 
+different communities.
+
+In summerization.py the results of the entire work are produced. It gives the number of tweets collected, 
+Number of users collected, Number of communities detected, average number of users per communities.
+The histogram shows the number of male and female twitter users those we have identified.   

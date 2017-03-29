@@ -1,0 +1,40 @@
+1.
+When we compare Jill Stein and Gary Johnson with Hillary Clinton and Donald Trump we can come across other facts that
+Jill Stein follows 4159 users and Gary Johnson follows 3123 users and they follow 349 common users.
+Hillary Clinton follows 748 friends and Donald Trump follows 42 users and they follow 1 common user.
+By this analysis it is inappropriate to say that Jill Stein and Gary Johnson are more similar than Hillary Clinton 
+and Donald Trump because it just compares the common friends between two candidates set. It does not take 
+into account how much users they actually follow. If Hillary Clinton and Donald Trump would follow some 3k - 4k
+users each, then they also would have significant number of common friends. 
+
+So to fix this approach we need to consider the number of accounts each candidate follow.
+
+2.
+They both follow Magic Johnson in common.
+Johnson supports Clinton since 2007 for her first run for presidency. This can be the obvious reason why Clinton follows him. 
+Johnson says that he does not hate Trump and wants to be part of Donald Trumps business. Also he likes Trump's hotels. It is also rumored that Johnson wants to replace
+Trump as the new face of the Celebrity Apprentice television franchise. This may be the reason why Donald Trump follows Johnson.
+
+3.
+Gary Johnson follows around 3k people whereas Donald Trump follows only 42 people. 
+The answer to the question why is this is that it is the personal likings they have. 
+Gary Johnson follows people from very large background but Donald Trump mainly follows to the people from family members, people to whom he is related in business etc. 
+The significant number of accounts that the Trump follows are the accounts of his own business organizations.
+Both the types of data use the same disciplines such as mathematical statistics, probability theory etc. 
+Difference is the volume, variety of the data in two different set of users. 
+So when we have a large set of records we need some different tools to analyze the data. 
+
+4. 
+The total number of requests we need to make are 8072. I got this number by adding all the friends of four candidates
+(4159 + 3123 + 748 + 42).
+Now to estimate the time required to process these many requests we can refer the time restrictions of the Twitter.
+Twitter can handle 15 requests of getting the friend ids in 15 minutes time window. It means we can make 15 requests 
+in 15 minutes time window. Each request can return at the most 5000 user ids at a time and takes very small amount of 
+time to get processed and significant time the system sleeps. So we can say that in 15 minutes we can make 15 requests 
+because the window starts with the first request, executes 15 requests and then sleeps for rest of the time in window. 
+For eg if we make 30 requests, we need 15 minutes plus some small amount of time to execute 16-30 requests.
+Here we have 8072 friends, so to get their friends ids we need 8070 (multiple of 15) minutes plus some small amount of
+time to execute the 8071th and 8072th request.
+Hence approximately we need 8070 minutes to get all the friend ids of all the friends of 4 candidates. 
+is made. So to make 30 requests we need 15 minutes for first 15 requests 
+
